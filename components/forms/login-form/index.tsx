@@ -21,6 +21,7 @@ const inputErrorStyles = " text-xs text-red-500 ml-1";
 
 export function LoginForm() {
   const [wrongCredentials, setWrongCredentials] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const {
     register,
     handleSubmit,
@@ -30,10 +31,13 @@ export function LoginForm() {
   });
 
   const onSubmit = async (data: LoginData) => {
+    setIsLoading(true);
     const res = await signIn(data);
     if (res === "bad credentials") {
       setWrongCredentials(true);
+      setIsLoading(false);
     }
+    
   };
 
   return (
@@ -90,7 +94,7 @@ export function LoginForm() {
             disabled={isSubmitting}
             className="bg-primary w-fit px-6 py-3 rounded-md hover:bg-secondary hover:text-white transform transition-all shadow"
           >
-            {isSubmitting ? "Submitting..." : "Submit"}
+            {isLoading ? "Submitting..." : "Submit"}
           </button>
         </div>
       </form>
