@@ -36,9 +36,9 @@ npm install
 
 ```
 
-4. Replace the .env.example file with an .env.local file and paste in environment variables
+4. Replace the .env.example file with an .env.local file and paste in the environment variables
 
-5. Replace the cypress.env.json.example file with a cypres.env.json file and paste in the environment variables
+5. Replace the cypress.env.json.example file with a cypress.env.json file and paste in the environment variables
 
 ## Usage
 
