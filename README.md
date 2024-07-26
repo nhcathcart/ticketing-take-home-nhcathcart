@@ -24,7 +24,7 @@ git clone https://github.com/nhcathcart/zealthy-nhcathcart.git
 
 ```bash
 
-cd ZEALTHY-TAKE-HOME
+cd zealthy-nhcathcart
 
 ```
 
