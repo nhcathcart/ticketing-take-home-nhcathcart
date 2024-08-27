@@ -1,4 +1,4 @@
-# Zealthy Help Desk
+#Help Desk
 
 ## Table of Contents
 
